@@ -96,3 +96,11 @@ prebuilt_etc_xml {
     sub_dir: "vintf/manifest",
     vendor: true,
 }
+
+prebuilt_etc_xml {
+    name: "android.hardware.graphics.composer-qti-display.xml",
+    src: "android.hardware.graphics.composer-qti-display.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    vendor: true,
+}

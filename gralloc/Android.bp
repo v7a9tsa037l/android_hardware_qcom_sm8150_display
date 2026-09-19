@@ -235,3 +235,11 @@ cc_binary {
     ],
     init_rc: ["vendor.qti.hardware.display.allocator-service.rc"],
 }
+
+prebuilt_etc_xml {
+    name: "android.hardware.graphics.mapper-impl-qti-display.xml",
+    src: "android.hardware.graphics.mapper-impl-qti-display.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    vendor: true,
+}
