@@ -83,18 +83,6 @@ cc_library_shared {
         "hwc_buffer_allocator.cpp",
         "pixel-display.cpp",
     ],
-
-    required: [
-        "pixel-display-default.xml",
-    ],
-}
-
-prebuilt_etc_xml {
-    name: "pixel-display-default.xml",
-    src: "pixel-display-default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    vendor: true,
 }
 
 prebuilt_etc_xml {
