@@ -12,6 +12,7 @@ package {
 cc_library_shared {
 
     name: "libdisplaydebug",
+    installable: true,
     defaults: ["display_defaults"],
     vendor: true,
 
