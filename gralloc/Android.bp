@@ -125,6 +125,9 @@ cc_library_shared {
     defaults: ["display_defaults"],
     vendor: true,
     relative_install_path: "hw",
+    vintf_fragments: [
+        "android.hardware.graphics.mapper-impl-qti-display.xml",
+    ],
 
     header_libs: [
         "display_headers",
@@ -200,6 +203,10 @@ cc_binary {
     defaults: ["display_defaults"],
     vendor: true,
     relative_install_path: "hw",
+    vintf_fragments: [
+        "vendor.qti.hardware.display.allocator-service.xml",
+    ],
+
     header_libs: [
         "display_headers",
         "device_kernel_headers",
